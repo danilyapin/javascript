@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taschenrechner</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 class="title">Taschenrechner</h1>
+        <div class="calculator">
+            <div class="input-aline">
+                <input type="text" class="input"></input>
+            </div>
+            <div class="button-aline">
+                <button class="btn" onclick="buttonClick('7')">7</button>
+                <button class="btn" onclick="buttonClick('8')">8</button>
+                <button class="btn" onclick="buttonClick('9')">9</button>
+                <button class="btn" onclick="numberDelete()"><i class="fa-solid fa-delete-left icon"></i></button>
+                <button class="btn" onclick="buttonClick('4')">4</button>
+                <button class="btn" onclick="buttonClick('5')">5</button>
+                <button class="btn" onclick="buttonClick('6')">6</button>
+                <button class="btn has-function" onclick="operatorClick('')">C</button>
+                <button class="btn" onclick="buttonClick('1')">1</button>
+                <button class="btn" onclick="buttonClick('2')">2</button>
+                <button class="btn" onclick="buttonClick('3')">3</button>
+                <button class="btn has-function" onclick="operatorClick('+')">+</button>
+                <button class="btn" onclick="buttonClick('.')">,</button>
+                <button class="btn" onclick="buttonClick('0')">0</button>
+                <button class="btn has-function" onclick="operatorClick('-')">-</button>
+                <button class="btn has-function" onclick="operatorClick('*')">*</button>
+                <button class="btn has-function" onclick="calculateResult()">=</button>
+                <button class="btn has-function" onclick="operatorClick('/')">/</button>
+            </div>
+        </div>
+    </header>
+    <script src="javascript.js"></script>
+</body>
+</html>
